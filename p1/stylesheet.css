@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(235,235,235);
+    margin-left: 10px;
+}
+h6 {
+    text-align: center;
+    margin-left: inherit;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h4 {
+    margin-top: 2px;
+    margin-left: inherit;
+    font-size: 24px;
+    margin-bottom: 1px;
+}
+nav {
+    margin-top: 10px;
+    margin-left: inherit;
+    font-size: 20px;
+    float: left;
+}
+li {
+    font-size: 18px;
+    margin: 10px;
+}
+div {
+    text-align: center;
+}
+img {
+    margin-left: inherit;
+}
+.projects {
+    color: green;
+}
+ul {
+    padding-left: 14px;
+    font-size: 16px;
+    margin-left: inherit;
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+table {
+    border: 1px solid black;
+    float: right;
+    margin-top: 42px;
+    margin-right: 320px;
+    width: 500px;
+    height: 100px;
+}
+caption {
+    font-size: 20px;
+}
+footer {
+    font-size: 18px;
+    background-color: lightgreen;
+}
+header {
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+body {
+    padding-left: 8px;
+}
+
+h1 {
+    padding-top: 8px;
+}
+
+#weather-input div{
+   padding-bottom: 8px;
+}
+
+#unit-input div {
+    padding-bottom: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-msg {
+   color: red;
+}
+
+table {
+   margin-bottom: 15px;
+}
+
+table caption {
+   font-weight: bold;
+   caption-side: top;
+}
+
+table td {
+   text-align: center;
+   padding: 3px 8px;
+}
+
+.makeLeft {
+    float:left;
+}
+
+.makeRight {
+    padding-top: 8px;
+    margin-left:500px;
+}

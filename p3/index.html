@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>JavaScript Unit Converter</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/unitConverter.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Unit Converter</a>
+      <p class="colorWhite">Link to Main Page: <a href="../index.html">aschwartz2018.html</a></p>
+    </div>
+  </nav>  
+  <header class="masthead text-center text-white">
+    <div>
+      <div class="container">
+        <h3>Length Conversions</h3>
+        <p>
+          <input type="text" id="length" class="bottomMargin"/>
+          <br>
+          <input type="button" class="btn btn-primary" id="in_to_cm" value="Inches to Centimeters" />
+          <input type="button" class="btn btn-primary" id="cm_to_in" value="Centimeters to Inches" />
+          <input type="button" class="btn btn-info" id="in_to_ft" value="Inches to Feet" />
+          <input type="button" class="btn btn-info" id="ft_to_in" value="Feet to Inches" />
+        </p>
+        <p class="bordered" id="lengthResult"></p> 
+        <h3>Weight Conversions</h3>
+        <p>
+          <input type="text" id="weight" class="bottomMargin"/>
+          <br>
+          <input type="button" class="btn btn-success" id="lb_to_kg" value="Pounds to Kilograms" />
+          <input type="button" class="btn btn-success" id="kg_to_lb" value="Kilograms to Pounds" />
+          <input type="button" class="btn btn-warning" id="g_to_kg" value="Grams to Kilograms" />
+          <input type="button" class="btn btn-warning" id="kg_to_g" value="Kilograms to Grams" />
+        </p>
+        <p class="bordered" id="weightResult"></p>
+      </div>
+      <p class="bigBold">This website uses the "One Page Wonder" template from <a href='https://startbootstrap.com/themes/one-page-wonder/'>Start Bootstrap</a></p>
+    </div>
+  </header>  
+
+  <!-- Own JavaScript -->
+  <script src="js/unitConversion.js"></script>
+      
+</body>
+
+</html>

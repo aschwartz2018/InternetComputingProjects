@@ -1,0 +1,15 @@
+h1 {
+    padding-top: 8px;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.colorGold {
+    color: darkgoldenrod;
+}

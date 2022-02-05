@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Weather Comparison</title>
+   <link rel="stylesheet" href="css/styles.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="js/weather.js"></script>
+   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+   <body>
+       <div class="makeLeft">
+          <h1>Weather Comparison</h1>
+          <p class="colorWhite">Link to Main Page: <a href="../index.html">aschwartz2018.html</a></p>
+          <div id="unit-input">
+             <div>
+                <input type="button" class="btn btn-secondary" id="celsius" value="Celsius" /> 
+                <input type="button" class="btn btn-primary" id="fahrenheit" value="Fahrenheit" /> 
+             </div>
+          </div>
+          <div id="weather-input">
+             <div>
+                <label for="city1">City 1:</label>
+                <input type="text" id="city1">
+                <span class="error-msg hidden" id="error-value-city1">Enter a city</span>
+             </div>
+             <div>
+                <label for="city2">City 2:</label>
+                <input type="text" id="city2">
+                <span class="error-msg hidden" id="error-value-city2">Enter a city</span>
+             </div>
+             <div>
+                <button id="compareBtn">Compare</button>
+             </div>
+           </div>
+      </div>
+      <div class="makeRight">
+          <div id="forecast" class="hidden">
+             <h2>5 Day Forecast</h2>
+
+             <p id="loading-city1">Loading...</p>
+             <p id="error-loading-city1" class="error-msg"></p>
+             <table id="results-city1">
+                <caption id="city1-name"></caption>
+                <tr>
+                   <td id="city1-day1-name"></td>
+                   <td id="city1-day2-name"></td>
+                   <td id="city1-day3-name"></td>
+                   <td id="city1-day4-name"></td>
+                   <td id="city1-day5-name"></td>
+                </tr>
+                <tr>
+                   <td id="city1-day1-high"></td>
+                   <td id="city1-day2-high"></td>
+                   <td id="city1-day3-high"></td>
+                   <td id="city1-day4-high"></td>
+                   <td id="city1-day5-high"></td>
+                </tr>
+                <tr>
+                   <td id="city1-day1-low"></td>
+                   <td id="city1-day2-low"></td>
+                   <td id="city1-day3-low"></td>
+                   <td id="city1-day4-low"></td>
+                   <td id="city1-day5-low"></td>
+                </tr>
+                <tr>
+                   <td><img id="city1-day1-image" src="data:," alt="City1Day1"></td>
+                   <td><img id="city1-day2-image" src="data:," alt="City1Day2"></td>
+                   <td><img id="city1-day3-image" src="data:," alt="City1Day3"></td>
+                   <td><img id="city1-day4-image" src="data:," alt="City1Day4"></td>
+                   <td><img id="city1-day5-image" src="data:," alt="City1Day5"></td>
+                </tr>
+             </table>
+
+             <p id="loading-city2">Loading...</p>
+             <p id="error-loading-city2" class="error-msg"></p>
+             <table id="results-city2">
+                <caption id="city2-name"></caption>
+                <tr>
+                   <td id="city2-day1-name"></td>
+                   <td id="city2-day2-name"></td>
+                   <td id="city2-day3-name"></td>
+                   <td id="city2-day4-name"></td>
+                   <td id="city2-day5-name"></td>
+                </tr>
+                <tr>
+                   <td id="city2-day1-high"></td>
+                   <td id="city2-day2-high"></td>
+                   <td id="city2-day3-high"></td>
+                   <td id="city2-day4-high"></td>
+                   <td id="city2-day5-high"></td>
+                </tr>
+                <tr>
+                   <td id="city2-day1-low"></td>
+                   <td id="city2-day2-low"></td>
+                   <td id="city2-day3-low"></td>
+                   <td id="city2-day4-low"></td>
+                   <td id="city2-day5-low"></td>
+                </tr>
+                <tr>
+                   <td><img id="city2-day1-image" src="data:," alt="City2Day1"></td>
+                   <td><img id="city2-day2-image" src="data:," alt="City2Day2"></td>
+                   <td><img id="city2-day3-image" src="data:," alt="City2Day3"></td>
+                   <td><img id="city2-day4-image" src="data:," alt="City2Day4"></td>
+                   <td><img id="city2-day5-image" src="data:," alt="City2Day5"></td>
+                </tr>
+             </table>
+          </div>
+       </div>
+   </body>
+</html>
